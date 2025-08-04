@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bath_2/4_aug_class.dart';
+import 'package:flutter_bath_2/first_day_class.dart';
 
 void main(){
   runApp(FlutterBatchTwoApp());
@@ -9,29 +10,11 @@ class FlutterBatchTwoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: FirstDayPractise(),
+    return MaterialApp(
+      home: FourAugClass(),
     debugShowCheckedModeBanner: false,
     );
   }
 }
-class FirstDayPractise extends StatelessWidget {
-  const FirstDayPractise({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        leading: Icon(Icons.menu,color: Colors.white,),
-        title: Text("Nadir",style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold),),
-        actions: [
-          Icon(Icons.person,color: Colors.white,)
-        ],
-        backgroundColor: Colors.amber,
-      ),
-      body: Container(color: Colors.blue,),
-
-    );
-  }
-}
 
